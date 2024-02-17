@@ -1,0 +1,15 @@
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/bin/Debug/net8.0/ConsoleApp
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/bin/Debug/net8.0/ConsoleApp.deps.json
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/bin/Debug/net8.0/ConsoleApp.runtimeconfig.json
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/bin/Debug/net8.0/ConsoleApp.dll
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/bin/Debug/net8.0/ConsoleApp.pdb
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.AssemblyInfoInputs.cache
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.AssemblyInfo.cs
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.csproj.CoreCompileInputs.cache
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.sourcelink.json
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.dll
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/obj/Debug/net8.0/refint/ConsoleApp.dll
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.pdb
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ConsoleApp.genruntimeconfig.cache
+/Users/gjargarin/Software Engineering/Development/C#/csharpTutorial/csharpTutorial/ConsoleApp/ConsoleApp/obj/Debug/net8.0/ref/ConsoleApp.dll
