@@ -7,7 +7,7 @@ namespace ConsoleApp{
     public class Program{
         static void Main(string[] args)
         {
-
+            // Authentication Simulation Demo code
             string[] user = {"geje","quen","pep"};
             string[] pw = {"212121","141414","0404"};            
             bool found = false;
