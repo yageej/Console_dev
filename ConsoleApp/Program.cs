@@ -1,40 +1,34 @@
 ﻿using System;
 using System.Dynamic;
+using System.Globalization;
 
 
 
-namespace ConsoleApp{
+namespace ConsoleApp
+{
 
-    public class Program{
+    public class Program
+    {
+        // Global variables -- needs to have static before datatype
+        // static string name = "GJ";
+
+        // summation of Numbers using methods
+
         static void Main(string[] args)
         {
-            // For each loop // Arrays of Integers summation
-
-
-            int [] numbers = {1,2,3,4,5};
-
-            int sum = 0;
-
-            foreach (var n1 in numbers)
-            {
-                sum += n1;
-
-            }
-            Console.WriteLine("total: "+sum);
-
-
-            // string[] names = {"GJ","GJJJ", "GASD"};
-
-            // foreach(var name in names){
-            //     if(name.Equals("GJJJ")){
-            //         Console.WriteLine("Hi, "+name);
-            //         break;
-            //     }
-            // }
-            
+            int[] arrayofInt = {1,2,3,4,5,5,1}; // sample array
+            Console.WriteLine(addMethod(arrayofInt)); //passed array variable to method parameters/arguements
         }
-
-        
+    
+        static int addMethod(int[] arrNumbers) // parameter is array of int
+        {
+            int sum = 0;
+            for (int index = 0; index < arrNumbers.Length; index++)
+            {
+                sum += arrNumbers[index]; // added arrnumbers value per loop
+            }
+            return sum; // return total
+        }
     }
 
 }
@@ -136,3 +130,44 @@ namespace ConsoleApp{
                 //         }
                 //         Console.WriteLine();
                 //     }
+
+
+
+
+   // For each loop // Arrays of Integers summation
+
+
+            // int [] numbers = {1,2,3,4,5};
+
+            // int sum = 0;
+
+            // foreach (var n1 in numbers)
+            // {
+            //     sum += n1;
+
+            // }
+            // Console.WriteLine("total: "+sum);
+
+
+            // string[] names = {"GJ","GJJJ", "GASD"};
+
+            // foreach(var name in names){
+            //     if(name.Equals("GJJJ")){
+            //         Console.WriteLine("Hi, "+name);
+            //         break;
+            //     }
+            // }
+            
+
+
+
+        //             //Overloading methods - same method with diff parameters/Argu
+        // static int add(int n1, int n2)
+        // {   
+        //     return n1 + n2;
+        // }
+
+        // static int add(int n1, int n2,int n3)
+        // {   
+        //     return n1 + n2 + n3;
+        // }
