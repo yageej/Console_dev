@@ -8,51 +8,29 @@ namespace ConsoleApp{
     public class Program{
         static void Main(string[] args)
         {
-            // 2D Array -- Array within an Array [rows, column]
+            // For each loop // Arrays of Integers summation
 
 
-            string[,] array2D = 
+            int [] numbers = {1,2,3,4,5};
+
+            int sum = 0;
+
+            foreach (var n1 in numbers)
             {
-                {"Pepper", "Potss"},
-                {"GJ", "Argarin"},
-                {"Quen", "Alba"},
-                {"GG", "QQ"},
-            };
+                sum += n1;
 
-
-            // 2D array in nested foreach loops
-            foreach(string x in array2D){
-                Console.WriteLine($" {x}");
             }
-
-            // Console.WriteLine(array2D.GetLength(0)); // lenght of row in 2D array
-            // Console.WriteLine(array2D.GetLength(1)); // lenght of col in 2D array
-            
-            // Console.WriteLine(array2D[3,1]);
-            // array2D[3,1] = "EYYY";
-            // // Console.WriteLine(array2D[0,1]);
-            // // Console.WriteLine(array2D[0,0]);
-            // Console.WriteLine(array2D[3,1]);
-// Console.WriteLine($"Hi Dog! you're {array2D[0,0]} {array2D[0,1]}? ");
-         
-            
-            
+            Console.WriteLine("total: "+sum);
 
 
+            // string[] names = {"GJ","GJJJ", "GASD"};
 
-                // // nested for loop
-                //     //normal for loop
-                //     for (int i = 0; i < 5; i++)
-                //     {
-                //         for(int x = 0; x < 5; x++)
-                //         {
-                //             Console.WriteLine(x);
-                //         }
-                //         Console.WriteLine();
-                //     }
-
-
-
+            // foreach(var name in names){
+            //     if(name.Equals("GJJJ")){
+            //         Console.WriteLine("Hi, "+name);
+            //         break;
+            //     }
+            // }
             
         }
 
@@ -113,3 +91,48 @@ namespace ConsoleApp{
             //     }
 
             // }
+
+
+
+           // 2D Array -- Array within an Array [rows, column]
+
+
+            // string[,] array2D = 
+            // {
+            //     {"Pepper", "Potss"},
+            //     {"GJ", "Argarin"},
+            //     {"Quen", "Alba"},
+            //     {"GG", "QQ"},
+            // };
+
+
+            // 2D array in nested foreach loops
+            // foreach(string x in array2D){
+            //     Console.WriteLine($" {x}");
+            // }
+
+            // Console.WriteLine(array2D.GetLength(0)); // lenght of row in 2D array
+            // Console.WriteLine(array2D.GetLength(1)); // lenght of col in 2D array
+            
+            // Console.WriteLine(array2D[3,1]);
+            // array2D[3,1] = "EYYY";
+            // // Console.WriteLine(array2D[0,1]);
+            // // Console.WriteLine(array2D[0,0]);
+            // Console.WriteLine(array2D[3,1]);
+// Console.WriteLine($"Hi Dog! you're {array2D[0,0]} {array2D[0,1]}? ");
+         
+            
+            
+
+
+
+                // // nested for loop
+                //     //normal for loop
+                //     for (int i = 0; i < 5; i++)
+                //     {
+                //         for(int x = 0; x < 5; x++)
+                //         {
+                //             Console.WriteLine(x);
+                //         }
+                //         Console.WriteLine();
+                //     }
