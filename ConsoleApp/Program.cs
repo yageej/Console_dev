@@ -12,13 +12,16 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            
-            Product prod = new Product("Milk", 150); //passing parameter value to constructors
-            Product prod2 = new Product("Egg", 120); 
+        
+        //declare variables for user input
+        string fn = Console.ReadLine();
+        string ln = Console.ReadLine();
+        int gr = Convert.ToInt32(Console.ReadLine());
+        char sec = Convert.ToChar(Console.ReadLine());    
+        
 
-            Console.WriteLine("Product Name: "+prod.name); //printing using objects created
-            Console.WriteLine("Product Price: "+prod.price);
-
+        // instantiate the constructor
+        Student s1 = new Student(fn,ln,gr,sec);
 
         }
     }
