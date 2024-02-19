@@ -9,26 +9,25 @@ namespace ConsoleApp
 
     public class Program
     {
-        // Global variables -- needs to have static before datatype
-        // static string name = "GJ";
-
-        // summation of Numbers using methods
-
         static void Main(string[] args)
         {
-            int[] arrayofInt = {1,2,3,4,5,5,1}; // sample array
-            Console.WriteLine(addMethod(arrayofInt)); //passed array variable to method parameters/arguements
+            // instantiate a class
+            // ClassName identifier = new Classname();
+            Arithmetic a = new Arithmetic();
+            Constants cons = new Constants();
+
+            // calling diff class methods with public access modifier 
+            // assign to new variable called x
+            int x = a.sumOfNumbers(5,3,3);
+            Console.WriteLine(x);
+
+            Console.WriteLine(cons.PI);
         }
-    
-        static int addMethod(int[] arrNumbers) // parameter is array of int
-        {
-            int sum = 0;
-            for (int index = 0; index < arrNumbers.Length; index++)
-            {
-                sum += arrNumbers[index]; // added arrnumbers value per loop
-            }
-            return sum; // return total
-        }
+    }
+
+    class SampleClassInsideMainClass
+    {
+        
     }
 
 }
@@ -170,4 +169,29 @@ namespace ConsoleApp
         // static int add(int n1, int n2,int n3)
         // {   
         //     return n1 + n2 + n3;
+        // }
+
+
+
+
+
+                // Global variables -- needs to have static before datatype
+        // static string name = "GJ";
+
+        // summation of Numbers using methods
+
+        // static void Main(string[] args)
+        // {
+        //     int[] arrayofInt = {1,2,3,4,5,5,1}; // sample array
+        //     Console.WriteLine(addMethod(arrayofInt)); //passed array variable to method parameters/arguements
+        // }
+    
+        // static int addMethod(int[] arrNumbers) // parameter is array of int
+        // {
+        //     int sum = 0;
+        //     for (int index = 0; index < arrNumbers.Length; index++)
+        //     {
+        //         sum += arrNumbers[index]; // added arrnumbers value per loop
+        //     }
+        //     return sum; // return total
         // }
