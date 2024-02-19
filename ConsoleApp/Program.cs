@@ -13,15 +13,15 @@ namespace ConsoleApp
         {
             // instantiate a class
             // ClassName identifier = new Classname();
-            Arithmetic a = new Arithmetic();
-            Constants cons = new Constants();
+            // Arithmetic a = new Arithmetic();              // cant instantiate a class with static modifier
+            // Constants cons = new Constants();              
 
             // calling diff class methods with public access modifier 
             // assign to new variable called x
-            int x = a.sumOfNumbers(5,3,3);
+            int x = Arithmetic.sumOfNumbers(5,3,3);          // access directly once public static is made on the desired class
             Console.WriteLine(x);
 
-            Console.WriteLine(cons.PI);
+            Console.WriteLine(Constants.PI);    // access directly even if class is not static as long as the methods inside it are static
         }
     }
 
