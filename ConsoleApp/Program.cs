@@ -11,26 +11,73 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // instantiate a class
-            // ClassName identifier = new Classname();
-            // Arithmetic a = new Arithmetic();              // cant instantiate a class with static modifier
-            // Constants cons = new Constants();              
+            // sample of class instantiation
+            Person Person1 = new Person();
+            Person1.fname = "GJ";     // accessing class attributes
+            Person1.lname = "Argarin"; // accessing class attributes
+            Person1.sex = 'M'; // accessing class attributes
+            Person1.age = 26; // accessing class attributes 
 
-            // calling diff class methods with public access modifier 
-            // assign to new variable called x
-            int x = Arithmetic.sumOfNumbers(5,3,3);          // access directly once public static is made on the desired class
-            Console.WriteLine(x);
+            Console.Write("Hello "+Person1.fname+ " "+ Person1.lname);
+            
+            Person Person2 = new Person();
+            Person2.fname = "GJ";
+            Person2.lname = "Argarin";
+            Person2.sex = 'M';
+            Person2.age = 26;
 
-            Console.WriteLine(Constants.PI);    // access directly even if class is not static as long as the methods inside it are static
+            Person Person3 = new Person();
+            Person Person4 = new Person();
+            Person Person5 = new Person();
+
+
         }
     }
 
-    class SampleClassInsideMainClass
-    {
-        
-    }
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         // Quiz Game w/ Lives recap
 
@@ -195,3 +242,22 @@ namespace ConsoleApp
         //     }
         //     return sum; // return total
         // }
+
+
+
+
+
+
+            // {
+            // // instantiate a class
+            // // ClassName identifier = new Classname();
+            // // Arithmetic a = new Arithmetic();              // cant instantiate a class with static modifier
+            // // Constants cons = new Constants();              
+
+            // // calling diff class methods with public access modifier 
+            // // assign to new variable called x
+            // int x = Arithmetic.sumOfNumbers(5,3,3);          // access directly once public static is made on the desired class
+            // Console.WriteLine(x);
+
+            // Console.WriteLine(Constants.PI);    // access directly even if class is not static as long as the methods inside it are static
+            // }
