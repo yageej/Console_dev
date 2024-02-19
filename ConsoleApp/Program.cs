@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Dynamic;
 using System.Globalization;
+using System.Security.AccessControl;
 
 
 
@@ -11,24 +12,12 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // sample of class instantiation
-            Person Person1 = new Person();
-            Person1.fname = "GJ";     // accessing class attributes
-            Person1.lname = "Argarin"; // accessing class attributes
-            Person1.sex = 'M'; // accessing class attributes
-            Person1.age = 26; // accessing class attributes 
-
-            Console.Write("Hello "+Person1.fname+ " "+ Person1.lname);
             
-            Person Person2 = new Person();
-            Person2.fname = "GJ";
-            Person2.lname = "Argarin";
-            Person2.sex = 'M';
-            Person2.age = 26;
+            Product prod = new Product("Milk", 150); //passing parameter value to constructors
+            Product prod2 = new Product("Egg", 120); 
 
-            Person Person3 = new Person();
-            Person Person4 = new Person();
-            Person Person5 = new Person();
+            Console.WriteLine("Product Name: "+prod.name); //printing using objects created
+            Console.WriteLine("Product Price: "+prod.price);
 
 
         }
@@ -261,3 +250,25 @@ namespace ConsoleApp
 
             // Console.WriteLine(Constants.PI);    // access directly even if class is not static as long as the methods inside it are static
             // }
+
+
+
+            //             // sample of class instantiation
+            // Person Person1 = new Person();
+            // Person1.fname = "GJ";     // accessing class attributes
+            // Person1.lname = "Argarin"; // accessing class attributes
+            // Person1.sex = 'M'; // accessing class attributes
+            // Person1.age = 26; // accessing class attributes 
+
+            // Console.Write("Hello "+Person1.fname+ " "+ Person1.lname);
+            
+            // Person Person2 = new Person();
+            // Person2.fname = "GJ";
+            // Person2.lname = "Argarin";
+            // Person2.sex = 'M';
+            // Person2.age = 26;
+
+            // Person Person3 = new Person();
+            // Person Person4 = new Person();
+            // Person Person5 = new Person();
+
