@@ -13,15 +13,21 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
         
-        //declare variables for user input
-        string fn = Console.ReadLine();
-        string ln = Console.ReadLine();
-        int gr = Convert.ToInt32(Console.ReadLine());
-        char sec = Convert.ToChar(Console.ReadLine());    
-        
+        //Tutorial ChallengeUSer input object creation
+        // variables for user input
 
-        // instantiate the constructor
-        Student s1 = new Student(fn,ln,gr,sec);
+        Console.WriteLine("Enter type of Animal: ");
+        string type = Console.ReadLine();
+        Console.WriteLine("Enter breed of Animal: ");
+        string breed = Console.ReadLine();
+        Console.WriteLine("Enter the age: ");
+        int age = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter animal Gender: ");
+        char sex = Convert.ToChar(Console.ReadLine());
+
+        
+        // instantiate constructor
+        Pets p = new Pets(type,breed,age,sex);
 
         }
     }
@@ -275,3 +281,16 @@ namespace ConsoleApp
             // Person Person4 = new Person();
             // Person Person5 = new Person();
 
+
+
+
+
+        // //declare variables for user input
+        // string fn = Console.ReadLine();
+        // string ln = Console.ReadLine();
+        // int gr = Convert.ToInt32(Console.ReadLine());
+        // char sec = Convert.ToChar(Console.ReadLine());    
+        
+
+        // // instantiate the constructor
+        // Student s1 = new Student(fn,ln,gr,sec);
