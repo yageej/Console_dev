@@ -13,30 +13,16 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-        string name,course,sname;
-        int year;
-        float midtermGrade,finalGrade;
-        char sec;
+            int uID = 123;
+            // how to use get set variables in Main
 
-        Console.Write("Enter your First Name: ");
-        name = Console.ReadLine();
-        Console.Write("Enter your Last Name: ");
-        sname = Console.ReadLine();
-        Console.Write("Enter your Course Name: ");
-        course = Console.ReadLine();
-        Console.Write("Enter your Year: ");
-        year = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Enter your Midterm Grade: ");
-        midtermGrade = Convert.ToSingle(Console.ReadLine());
-        Console.Write("Enter your FInal Grade: ");
-        finalGrade = Convert.ToSingle(Console.ReadLine());
-        Console.Write("Enter your Section: ");
-        sec = Convert.ToChar(Console.ReadLine());
-
-
-        Student stud1 = new Student(name,sname,year,course,sec,midtermGrade,finalGrade);
-        stud1.introduceSelf();
-        stud1.evaluateGrade();
+            //instantiate first
+            User U = new User(uID);  
+            // // SET value
+            // U.UserID = 121;
+            // // GET value
+            // Console.WriteLine(U.UserID);  
+            
 
         }
     }
@@ -344,3 +330,31 @@ namespace ConsoleApp
 
         // //using return so it wont show unless put inside console Writeline
         // Console.WriteLine(CO.CharObjectMet_dialog()); 
+
+
+    // STUDENT OBJ SIMULATIOn
+
+        // string name,course,sname;
+        // int year;
+        // float midtermGrade,finalGrade;
+        // char sec;
+
+        // Console.Write("Enter your First Name: ");
+        // name = Console.ReadLine();
+        // Console.Write("Enter your Last Name: ");
+        // sname = Console.ReadLine();
+        // Console.Write("Enter your Course Name: ");
+        // course = Console.ReadLine();
+        // Console.Write("Enter your Year: ");
+        // year = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Enter your Midterm Grade: ");
+        // midtermGrade = Convert.ToSingle(Console.ReadLine());
+        // Console.Write("Enter your FInal Grade: ");
+        // finalGrade = Convert.ToSingle(Console.ReadLine());
+        // Console.Write("Enter your Section: ");
+        // sec = Convert.ToChar(Console.ReadLine());
+
+
+        // Student stud1 = new Student(name,sname,year,course,sec,midtermGrade,finalGrade);
+        // stud1.introduceSelf();
+        // stud1.evaluateGrade();
