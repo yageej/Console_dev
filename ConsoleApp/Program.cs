@@ -13,21 +13,21 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
         
-        //Tutorial ChallengeUSer input object creation
-        // variables for user input
 
-        Console.WriteLine("Enter type of Animal: ");
-        string type = Console.ReadLine();
-        Console.WriteLine("Enter breed of Animal: ");
-        string breed = Console.ReadLine();
-        Console.WriteLine("Enter the age: ");
-        int age = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Enter animal Gender: ");
-        char sex = Convert.ToChar(Console.ReadLine());
+        // OBJECT METHODS
 
+
+        string n1 = Console.ReadLine();
+        string n2 = Console.ReadLine();
+        int hp1 = Convert.ToInt32(Console.ReadLine());
         
-        // instantiate constructor
-        Pets p = new Pets(type,breed,age,sex);
+        // Instantiate class and input constructor parameterss
+        Character_obj CO = new Character_obj(n1,n2,hp1);    
+        // Classname instantiate.ObjectMethod();
+        CO.CharObjMet_greet();
+
+        //using return so it wont show unless put inside console Writeline
+        Console.WriteLine(CO.CharObjectMet_dialog()); 
 
         }
     }
@@ -294,3 +294,25 @@ namespace ConsoleApp
 
         // // instantiate the constructor
         // Student s1 = new Student(fn,ln,gr,sec);
+
+
+
+
+
+
+
+        //Tutorial ChallengeUSer input object creations
+        // variables for user input
+
+        // Console.WriteLine("Enter type of Animal: ");
+        // string type = Console.ReadLine();
+        // Console.WriteLine("Enter breed of Animal: ");
+        // string breed = Console.ReadLine();
+        // Console.WriteLine("Enter the age: ");
+        // int age = Convert.ToInt32(Console.ReadLine());
+        // Console.WriteLine("Enter animal Gender: ");
+        // char sex = Convert.ToChar(Console.ReadLine());
+
+        
+        // // instantiate constructor
+        // Pets p = new Pets(type,breed,age,sex);
