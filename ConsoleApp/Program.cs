@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design.Serialization;
 using System.Dynamic;
 using System.Globalization;
 using System.Security.AccessControl;
@@ -12,22 +13,30 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-        
+        string name,course,sname;
+        int year;
+        float midtermGrade,finalGrade;
+        char sec;
 
-        // OBJECT METHODS
+        Console.Write("Enter your First Name: ");
+        name = Console.ReadLine();
+        Console.Write("Enter your Last Name: ");
+        sname = Console.ReadLine();
+        Console.Write("Enter your Course Name: ");
+        course = Console.ReadLine();
+        Console.Write("Enter your Year: ");
+        year = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter your Midterm Grade: ");
+        midtermGrade = Convert.ToSingle(Console.ReadLine());
+        Console.Write("Enter your FInal Grade: ");
+        finalGrade = Convert.ToSingle(Console.ReadLine());
+        Console.Write("Enter your Section: ");
+        sec = Convert.ToChar(Console.ReadLine());
 
 
-        string n1 = Console.ReadLine();
-        string n2 = Console.ReadLine();
-        int hp1 = Convert.ToInt32(Console.ReadLine());
-        
-        // Instantiate class and input constructor parameterss
-        Character_obj CO = new Character_obj(n1,n2,hp1);    
-        // Classname instantiate.ObjectMethod();
-        CO.CharObjMet_greet();
-
-        //using return so it wont show unless put inside console Writeline
-        Console.WriteLine(CO.CharObjectMet_dialog()); 
+        Student stud1 = new Student(name,sname,year,course,sec,midtermGrade,finalGrade);
+        stud1.introduceSelf();
+        stud1.evaluateGrade();
 
         }
     }
@@ -316,3 +325,22 @@ namespace ConsoleApp
         
         // // instantiate constructor
         // Pets p = new Pets(type,breed,age,sex);
+
+
+
+
+
+             // OBJECT METHODS
+
+
+        // string n1 = Console.ReadLine();
+        // string n2 = Console.ReadLine();
+        // int hp1 = Convert.ToInt32(Console.ReadLine());
+        
+        // // Instantiate class and input constructor parameterss
+        // Character_obj CO = new Character_obj(n1,n2,hp1);    
+        // // Classname instantiate.ObjectMethod();
+        // CO.CharObjMet_greet();
+
+        // //using return so it wont show unless put inside console Writeline
+        // Console.WriteLine(CO.CharObjectMet_dialog()); 
