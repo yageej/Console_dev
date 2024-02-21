@@ -3,6 +3,7 @@ using System.ComponentModel.Design.Serialization;
 using System.Dynamic;
 using System.Globalization;
 using System.Security.AccessControl;
+using System.Security.Cryptography.X509Certificates;
 
 
 
@@ -13,32 +14,15 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // variable
-            int p_id;
-            string p_name;
-            float p_price;
 
-            Console.WriteLine("Enter Product ID: ");
-            p_id = Convert.ToInt32(Console.ReadLine());
-            
-            Console.WriteLine("Enter Product Name: ");
-            p_name = Console.ReadLine();
+    // Using INHERITANCE, Base class, derived class
+            Person p = new Person("str1", "str2");
+            Toddler t = new Toddler("str3","str4","strAction5");
+            Console.WriteLine(t.t_action+" "+t.fname+" "+t.lname);
 
-            Console.WriteLine("Enter price: ");
-            p_price = Convert.ToSingle(Console.ReadLine());
-
-            // Overloading Constructor
-            
-            
-            // Product prod = new Product(p_id,p_name,p_price);
-            // Product prod2 = new Product();
-            Product prod3 = new Product(p_id,p_name);
-
-
-            
-
-
-
+            // p.introduceSelf();
+            // t.introduceSelf(); 
+            Child ch = new Child("str6","str7","strAction8");
         }
     }
 
@@ -387,3 +371,32 @@ namespace ConsoleApp
             // // // GET value
             // // Console.WriteLine(U.UserID);  
             
+
+
+// overloading constructors
+
+//             // variable
+//             int p_id;
+//             string p_name;
+//             float p_price;
+
+//             Console.WriteLine("Enter Product ID: ");
+//             p_id = Convert.ToInt32(Console.ReadLine());
+            
+//             Console.WriteLine("Enter Product Name: ");
+//             p_name = Console.ReadLine();
+
+//             Console.WriteLine("Enter price: ");
+//             p_price = Convert.ToSingle(Console.ReadLine());
+
+//             // Overloading Constructor
+            
+            
+//             // Product prod = new Product(p_id,p_name,p_price);
+//             // Product prod2 = new Product();
+//             Product prod3 = new Product(p_id,p_name);
+
+
+            
+
+
