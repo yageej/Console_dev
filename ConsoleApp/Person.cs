@@ -17,7 +17,7 @@ public class Person
 
     // Base Method
     public void introduceSelf(){
-    
+        Console.WriteLine("Print lname" +lname);
     }
 
 }
