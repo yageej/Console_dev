@@ -13,16 +13,31 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            int uID = 123;
-            // how to use get set variables in Main
+            // variable
+            int p_id;
+            string p_name;
+            float p_price;
 
-            //instantiate first
-            User U = new User(uID);  
-            // // SET value
-            // U.UserID = 121;
-            // // GET value
-            // Console.WriteLine(U.UserID);  
+            Console.WriteLine("Enter Product ID: ");
+            p_id = Convert.ToInt32(Console.ReadLine());
             
+            Console.WriteLine("Enter Product Name: ");
+            p_name = Console.ReadLine();
+
+            Console.WriteLine("Enter price: ");
+            p_price = Convert.ToSingle(Console.ReadLine());
+
+            // Overloading Constructor
+            
+            
+            // Product prod = new Product(p_id,p_name,p_price);
+            // Product prod2 = new Product();
+            Product prod3 = new Product(p_id,p_name);
+
+
+            
+
+
 
         }
     }
@@ -358,3 +373,17 @@ namespace ConsoleApp
         // Student stud1 = new Student(name,sname,year,course,sec,midtermGrade,finalGrade);
         // stud1.introduceSelf();
         // stud1.evaluateGrade();
+
+
+            // ENCAPSULATIOn
+
+            //         int uID = 123;
+            // // how to use get set variables in Main
+
+            // //instantiate first
+            // User U = new User(uID);  
+            // // // SET value
+            // // U.UserID = 121;
+            // // // GET value
+            // // Console.WriteLine(U.UserID);  
+            
