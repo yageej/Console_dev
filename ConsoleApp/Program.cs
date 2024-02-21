@@ -17,14 +17,46 @@ namespace ConsoleApp
             // you can instantiate like this 
             // BaseClass B = new DerivedClass()
 
-            Animal A = new Animal();
-            Animal C = new Cat();
-            Animal D = new Dog();
+            // Animal A = new Animal();
+            // Animal C = new Cat();
+            // Animal D = new Dog();
 
 
-            C.animalSound();
-            D.animalSound();
+            // C.animalSound();
+            // D.animalSound();
 
+
+
+            // POLYMORPHISM CHALLENGE
+            string frarity = "";
+            Console.WriteLine("Enter Anime line: ");
+            string fAnimeLine = Console.ReadLine();
+            Console.WriteLine("Enter Funko Name: ");
+            string fname = Console.ReadLine();
+            Console.WriteLine("Enter Funko Price: ");
+            float fprice = Convert.ToSingle(Console.ReadLine());
+
+
+            if(fAnimeLine.Equals("naruto",StringComparison.InvariantCultureIgnoreCase))
+            {
+            //Instantiating Base class to Derived Class
+            FunkoPopLine NL = new NarutoLine();
+            NL.printFunkoDetails(fname,fprice,frarity,fAnimeLine);
+            }
+            else if(fAnimeLine.Equals("mha",StringComparison.InvariantCultureIgnoreCase))
+            {
+            FunkoPopLine MHAL = new MyHeroAcademia();
+            MHAL.printFunkoDetails(fname,fprice,frarity,fAnimeLine);
+            }
+            else
+            {
+                Console.WriteLine("Invalid ANime line. Exiting program.");
+            }
+
+            //instantiate base class
+            FunkoPopLine FPL = new FunkoPopLine();
+            // FPL.printFunkoDetails(fname,fprice,frarity,fAnimeLine);
+            
 
 
 
