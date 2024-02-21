@@ -16,6 +16,12 @@ public class Toddler : Person // used to inherit class Person methods and attrib
         this.t_action = t_action;
     }
 
+    public void introduceSelf(){
+
+    base.introduceSelf();
+        Console.Write("Hello! " +fname+" "+lname+" "+t_action);
+    }
+
 }
 
 public class Child : Toddler
