@@ -5,8 +5,6 @@ using System.Globalization;
 using System.Security.AccessControl;
 using System.Security.Cryptography.X509Certificates;
 
-
-
 namespace ConsoleApp
 {
 
@@ -14,18 +12,16 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-
     // Using INHERITANCE, Base class, derived class
             Person p = new Person("str1", "str2");
             Toddler t = new Toddler("str3","str4","strAction5");
-            Console.WriteLine(t.t_action+" "+t.fname+" "+t.lname);
+            // Console.WriteLine(t.t_action+" "+t.fname+" "+t.lname);
 
-            // p.introduceSelf();
-            // t.introduceSelf(); 
+            p.introduceSelf();
+            t.introduceSelf(); 
             Child ch = new Child("str6","str7","strAction8");
         }
     }
-
 
 
 }
