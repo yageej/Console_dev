@@ -13,22 +13,45 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            // Array of Objects
-            Animal[] animals = new Animal[3];
-            animals[0] = new Dog();
-            animals[1] = new Cat();
-            animals[2] = new Dog();
+            // Student registration Simulation
+            string firstName;
+            string lastName;
+            int year;
+            string course;
+            string section;
 
-        for(int i = 0; i <animals.Length; i++){
-            animals[i].animalSound();
-        }
+            Console.WriteLine("Enter number of Students to be registered: ");
+            int numberOfStudents = Convert.ToInt32(Console.ReadLine());
+            Student_Reg[] stud = new Student_Reg[numberOfStudents];
+
+          for (int i = 0; i < numberOfStudents; i++)
+          {
+                Console.WriteLine("Student Information" + "#" + (i+1));
+                Console.WriteLine();
+                Console.WriteLine("Enter First name : ");
+                firstName = Console.ReadLine();
+                Console.WriteLine("Enter Last name  :  ");
+                lastName = Console.ReadLine();
+
+                Console.WriteLine("Enter year       : ");
+                year = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter Course     : ");
+                course = Console.ReadLine();
+
+                Console.WriteLine("Enter Section    : ");
+                section = Console.ReadLine();
+                
+                stud[i] = new Student_Reg(firstName,lastName,year,course,section);
+          }
+          foreach (Student_Reg st in stud)
+          {
+            st.studentDetails();
+          }
+            }
 
         }
     }
-
-
-
-}
 
 
 
@@ -509,3 +532,16 @@ namespace ConsoleApp
     //         Console.Write("Dog is Walking");
     //     }
     // }
+
+
+
+
+            // Array of Objects
+        //     Animal[] animals = new Animal[3];
+        //     animals[0] = new Dog();
+        //     animals[1] = new Cat();
+        //     animals[2] = new Dog();
+
+        // for(int i = 0; i <animals.Length; i++){
+        //     animals[i].animalSound();
+        // }
