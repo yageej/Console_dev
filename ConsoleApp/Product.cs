@@ -10,7 +10,8 @@ public class Product
 
 
     // Overloading Constructor sample with parameter or 
-    //multiple constructor with same name but diff number of parameter/arguments
+    //multiple constructor with same name but diff number 
+    // of parameter/arguments
     public Product(int productId, string productName)
     {
         this.productId = productId;

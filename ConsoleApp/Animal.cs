@@ -1,9 +1,7 @@
 ﻿namespace ConsoleApp;
 
-public class Animal
+public abstract class Animal
 {
 
-    public virtual void animalSound(){
-        Console.WriteLine("NYEK!");
-    }
+    public abstract void animalSound();
 }

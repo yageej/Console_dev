@@ -13,35 +13,19 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            //Abstraction Interface
-            // way of instantiating an Interface. Dont instantiate using interface
-            //always use the class who inherit the interfaces
-            Dog_i iaD = new Dog_i();
-            iaD.makeSound();
-            iaD.walk();
-        }
-    }
-    interface IAnimal // inside interface all method are abstract by default.
-    {
-        void makeSound(); // this is an abstract method
-    }
-    interface ILandAnimal
-    {
-        void walk();
-    }
+            // Array of Objects
+            Animal[] animals = new Animal[3];
+            animals[0] = new Dog();
+            animals[1] = new Cat();
+            animals[2] = new Dog();
 
-    public class Dog_i : IAnimal, ILandAnimal // this is how to inherit interfaces. You can inherit multi interfacs in 1 class
-    {                                         // since this is abstract, it will require to inherit the methods from the interfaces
-        public void makeSound() // doesnt need keyword Override. Just copy the method and make a body{} 
-        {
-            Console.WriteLine("Arf!");
+        for(int i = 0; i <animals.Length; i++){
+            animals[i].animalSound();
         }
 
-        public void walk() // doesnt need keyword Override. Just copy the method and make a body{} 
-        {
-            Console.Write("Dog is Walking");
         }
     }
+
 
 
 }
@@ -486,3 +470,42 @@ namespace ConsoleApp
             // corret sample
             // AnimalAbstract AT = new Tiger("string1", "string2");
             // AT.animalSound();
+
+
+
+
+
+
+
+
+    //                 static void Main(string[] args)
+    //     {
+    //         //Abstraction Interface
+    //         // way of instantiating an Interface. Dont instantiate using interface
+    //         //always use the class who inherit the interfaces
+    //         Dog_i iaD = new Dog_i();
+    //         iaD.makeSound();
+    //         iaD.walk();
+    //     }
+    // }
+    // interface IAnimal // inside interface all method are abstract by default.
+    // {
+    //     void makeSound(); // this is an abstract method
+    // }
+    // interface ILandAnimal
+    // {
+    //     void walk();
+    // }
+
+    // public class Dog_i : IAnimal, ILandAnimal // this is how to inherit interfaces. You can inherit multi interfacs in 1 class
+    // {                                         // since this is abstract, it will require to inherit the methods from the interfaces
+    //     public void makeSound() // doesnt need keyword Override. Just copy the method and make a body{} 
+    //     {
+    //         Console.WriteLine("Arf!");
+    //     }
+
+    //     public void walk() // doesnt need keyword Override. Just copy the method and make a body{} 
+    //     {
+    //         Console.Write("Dog is Walking");
+    //     }
+    // }

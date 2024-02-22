@@ -2,8 +2,10 @@
 
 public class Dog : Animal
 {
-        public override void animalSound(){
-       
-        Console.WriteLine("WOOF!");
+
+    public override void animalSound()
+    {
+        Console.WriteLine("Arrrrrrf!");
+
     }
 }
